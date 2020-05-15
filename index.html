@@ -23,7 +23,7 @@
             border-radius: 0.25rem;
             /*transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;*/
             color: #fff;
-            background-color: #7c4dff;
+            background-color: #ab47bc;
             border-color: #ff18be;
             box-shadow: none;
         }
@@ -57,29 +57,46 @@
             transform: scale(1.09);
             transition-duration: 300ms;
             transform-origin: center;
-            background: #7c4dff;
+            background: #ab47bc;
+        }
+
+        .top-bar {
+            background-color: #ab47bc;
+        }
+
+        .cursive-font {
+            font-family: 'Permanent Marker', cursive;
+            padding: 0;
+            border-top: 0;
+            margin: -15px 0 0;
         }
     </style>
     <meta content='width=device-width, initial-scale=1.0, shrink-to-fit=no' name='viewport'/>
     <!--    todo change meta description to company vision-->
-    <meta name="description" content="Lotus Software."/>
+    <meta name="description" content="Lotus Software is a software company based on Colombo, Sri Lanka"/>
     <!--     Fonts and icons     -->
     <link rel="stylesheet" type="text/css"
           href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons"/>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+<!--    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
     <!-- CSS Files -->
     <link href="./assets/css/material-kit.css?v=2.0.7" rel="stylesheet"/>
-    <!-- CSS Just for demo purpose, don't include it in your project -->
+    <!-- CSS Just for demo purpose, don't include it
+     in your project -->
     <link href="./assets/demo/demo.css" rel="stylesheet"/>
 </head>
 
-<body class="index-page sidebar-collapse">
+<body class="index-page sidebar-collapse" id="top">
 <nav class="navbar navbar-transparent navbar-color-on-scroll fixed-top navbar-expand-lg purple-filter"
      color-on-scroll="100"
      id="sectionsNav">
     <div class="container">
         <div class="navbar-translate">
-            <a class="navbar-brand" href="#">
+
+                <img src="./assets/img/lotus-icon-only-transparent2.png" alt="Lotus Software" class="img img-fluid">
+
+            <a class="navbar-brand" href="#" style="font-weight: bold">
                 Lotus Software </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" aria-expanded="false"
                     aria-label="Toggle navigation">
@@ -92,19 +109,19 @@
         <div class="collapse navbar-collapse">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
-                    <a class="nav-link transform-large" href="./index.html" target="_self"><i
+                    <a class="nav-link transform-large" href="#top" target="_self"><i
                             class="material-icons transform-large">home</i>Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link transform-large" href="" target="_self"><i
+                    <a class="nav-link transform-large" href="#info" target="_self"><i
                             class="material-icons">info</i>About Us</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link transform-large" href="" target="_self"><i
+                    <a class="nav-link transform-large" href="#products" target="_self"><i
                             class="material-icons">laptop_mac</i>Our Products</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link transform-large" href="" target="_self"><i
+                    <a class="nav-link transform-large" href="#contact_us" target="_self"><i
                             class="material-icons">contacts</i>Contact Us</a>
                 </li>
                 <li class="dropdown nav-item transform-large">
@@ -113,12 +130,17 @@
                     </a>
                     <div class="dropdown-menu dropdown-with-icons">
                         <a class="nav-link" rel="tooltip" title="" data-placement="bottom"
-                           href="https://www.facebook.com/CreativeTim" target="_blank">
-                            <i class="fa fa-facebook"></i> Facebook
+                           href="https://www.facebook.com/" target="_blank">
+                            <i class="fab fa-facebook fa-3x"></i> Facebook
                         </a>
                         <a class="nav-link" rel="tooltip" title="" data-placement="bottom"
-                           href="https://www.instagram.com/CreativeTimOfficial" target="_blank">
-                            <i class="fa fa-instagram"></i> Instagram
+                           href="https://www.instagram.com/" target="_blank">
+                            <i class="fab fa-instagram-square fa-3x"></i> Instagram
+                        </a>
+
+                        <a class="nav-link" rel="tooltip" title="" data-placement="bottom"
+                           href="https://www.instagram.com/" target="_blank">
+                        <i class="fab fa-linkedin fa-3x"></i> Linkedin
                         </a>
                     </div>
                 </li>
@@ -132,10 +154,15 @@
     <div class="container">
         <div class="row">
             <div class="col-md-6">
-                <h1 class="title">Your Story Starts With Us.</h1>
-                <h4>Every landing page needs a small description after the big bold title, that&apos;s why we added this
-                    text here. Add here all the information that can make you or your product create the first
-                    impression.</h4>
+
+                <img src="./assets/img/lotus-icon-only-transparent2.png" alt="Lotus Software" class="img img-fluid"
+                     style="transform: scale(1.5); padding: 10px">
+                <h1 style="font-weight: bold;padding: 0; border-bottom: 0;margin: 0 0 -10px;">Lotus Software</h1>
+
+                <h4 class="cursive-font">We make IT happen</h4>
+                <!--                <h4>Every landing page needs a small description after the big bold title, that&apos;s why we added this-->
+                <!--                    text here. Add here all the information that can make you or your product create the first-->
+                <!--                    impression.</h4>-->
                 <br>
                 <a href="#" target="_self"
                    class="btn-purple">
@@ -145,13 +172,13 @@
         </div>
     </div>
 </div>
-<div class="main main-raised">
+<div class="main main-raised" id="info">
     <div class="container">
         <div class="section text-center">
             <div class="row">
                 <div class="col-md-8 ml-auto mr-auto">
                     <h2 class="title">Let&apos;s talk product</h2>
-                    <h5 class="description">This is the paragraph where you can write more details about your product.
+                    <h5 class=" h5">This is the paragraph where you can write more details about your product.
                         Keep you user engaged by providing meaningful information. Remember that by this time, the user
                         is curious, otherwise he wouldn&apos;t scroll to get here. Add a button if you want the user to
                         see more.</h5>
@@ -189,97 +216,108 @@
                                 one. A paragraph describing a feature will be enough.</p>
                         </div>
                     </div>
+
+
                 </div>
             </div>
         </div>
-        <div class="section text-center">
-            <h2 class="title">Here is our team</h2>
+        <div class="section text-center" id="products">
+            <h2 class="title">Our Product Showcase</h2>
+            <br>
             <div class="team">
                 <div class="row">
-                    <div class="col-md-4">
-                        <div class="team-player">
-                            <div class="card card-plain">
+
+                    <div class="col-md-6">
+                        <div class="card">
+                            <div class="card-header card-header-primary">
+                                <h4 class="card-title">Full Featured Multilingual Keyboard</h4>
+                                <div class="category"><i class="material-icons">android</i>Android</div>
+                            </div>
+                            <br>
+                            <div class="card-body">
+                                <div class="row">
                                 <div class="col-md-6 ml-auto mr-auto">
-                                    <img src="./assets/img/faces/avatar.jpg" alt="Thumbnail Image"
-                                         class="img-raised rounded-circle img-fluid">
+                                    <img src="./assets/img/faces/avatar.jpg" alt="Thumbnail Image" class="img rounded img-fluid">
                                 </div>
-                                <h4 class="card-title">Gigi Hadid
-                                    <br>
-                                    <small class="card-description text-muted">Model</small>
-                                </h4>
-                                <div class="card-body">
-                                    <p class="card-description">You can write here details about one of your team
-                                        members. You can give more details about what they do. Feel free to add some
-                                        <a href="#">links</a> for people to be able to follow them outside the site.</p>
                                 </div>
-                                <div class="card-footer justify-content-center">
-                                    <a href="#pablo" class="btn btn-link btn-just-icon"><i
-                                            class="fa fa-twitter"></i></a>
-                                    <a href="#pablo" class="btn btn-link btn-just-icon"><i class="fa fa-instagram"></i></a>
-                                    <a href="#pablo" class="btn btn-link btn-just-icon"><i
-                                            class="fa fa-facebook-square"></i></a>
-                                </div>
+                                <br>
+                                <p class="text-center h5">
+                                The place is close to Barceloneta Beach and bus stop just 2 min by walk and near to
+                                "Naviglio" where you can enjoy the main night life in Barcelona...
+                            </p>
+                            </div>
+                            <div class="card-footer justify-content-center">
+                                <a href="#pablo" class="btn btn-link btn-just-icon"><i class="fab fa-github" aria-hidden="true"></i></a>
+                                <a href="#pablo" class="btn btn-link btn-just-icon"><i class="fab fa-google-play"></i></a>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4">
-                        <div class="team-player">
-                            <div class="card card-plain">
-                                <div class="col-md-6 ml-auto mr-auto">
-                                    <img src="./assets/img/faces/christian.jpg" alt="Thumbnail Image"
-                                         class="img-raised rounded-circle img-fluid">
-                                </div>
-                                <h4 class="card-title">Christian Louboutin
-                                    <br>
-                                    <small class="card-description text-muted">Designer</small>
-                                </h4>
-                                <div class="card-body">
-                                    <p class="card-description">You can write here details about one of your team
-                                        members. You can give more details about what they do. Feel free to add some
-                                        <a href="#">links</a> for people to be able to follow them outside the site.</p>
-                                </div>
-                                <div class="card-footer justify-content-center">
-                                    <a href="#pablo" class="btn btn-link btn-just-icon"><i
-                                            class="fa fa-twitter"></i></a>
-                                    <a href="#pablo" class="btn btn-link btn-just-icon"><i
-                                            class="fa fa-linkedin"></i></a>
-                                </div>
+
+                    <div class="col-md-6">
+                        <div class="card">
+                            <div class="card-header card-header-primary">
+                                <h4 class="card-title">Online Shopping App</h4>
+                                <div class="category"><i class="material-icons">android</i>Android</div>
                             </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="team-player">
-                            <div class="card card-plain">
-                                <div class="col-md-6 ml-auto mr-auto">
-                                    <img src="./assets/img/faces/kendall.jpg" alt="Thumbnail Image"
-                                         class="img-raised rounded-circle img-fluid">
+                            <br>
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-md-6 ml-auto mr-auto">
+                                        <img src="./assets/img/faces/camp.jpg" alt="Thumbnail Image" class="img rounded img-fluid">
+                                    </div>
                                 </div>
-                                <h4 class="card-title">Kendall Jenner
-                                    <br>
-                                    <small class="card-description text-muted">Model</small>
-                                </h4>
-                                <div class="card-body">
-                                    <p class="card-description">You can write here details about one of your team
-                                        members. You can give more details about what they do. Feel free to add some
-                                        <a href="#">links</a> for people to be able to follow them outside the site.</p>
-                                </div>
-                                <div class="card-footer justify-content-center">
-                                    <a href="#pablo" class="btn btn-link btn-just-icon"><i
-                                            class="fa fa-twitter"></i></a>
-                                    <a href="#pablo" class="btn btn-link btn-just-icon"><i class="fa fa-instagram"></i></a>
-                                    <a href="#pablo" class="btn btn-link btn-just-icon"><i
-                                            class="fa fa-facebook-square"></i></a>
-                                </div>
+                                <br>
+                                <p class="text-center h5">
+                                    The place is close to Barceloneta Beach and bus stop just 2 min by walk and near to
+                                    "Naviglio" where you can enjoy the main night life in Barcelona...
+                                </p>
+                            </div>
+                            <div class="card-footer justify-content-center">
+                                <a href="#pablo" class="btn btn-link btn-just-icon"><i class="fab fa-github" aria-hidden="true"></i></a>
+                                <a href="#pablo" class="btn btn-link btn-just-icon"><i class="fab fa-google-play"></i></a>
                             </div>
                         </div>
                     </div>
                 </div>
+
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="card">
+                            <div class="card-header card-header-primary">
+                                <h4 class="card-title">bchsdbchbbsdc</h4>
+                                <div class="category"><i class="material-icons">android</i>Android</div>
+                            </div>
+                            <br>
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-md-6 ml-auto mr-auto">
+                                        <img src="./assets/img/faces/camp.jpg" alt="Thumbnail Image" class="img rounded img-fluid">
+                                    </div>
+                                </div>
+                                <br>
+                                <p class="text-center h5">
+                                    The place is close to Barceloneta Beach and bus stop just 2 min by walk and near to
+                                    "Naviglio" where you can enjoy the main night life in Barcelona...
+                                </p>
+                            </div>
+                            <div class="card-footer justify-content-center">
+                                <a href="#pablo" class="btn btn-link btn-just-icon"><i class="fab fa-github" aria-hidden="true"></i></a>
+                                <a href="#pablo" class="btn btn-link btn-just-icon"><i class="fab fa-google-play"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+
             </div>
         </div>
-        <div class="section section-contacts">
+        <div class="section section-contacts" id="contact_us">
             <div class="row">
                 <div class="col-md-8 ml-auto mr-auto">
-                    <h2 class="text-center title">Work with us</h2>
+                    <h2 class="text-center title" >Contact Us</h2>
                     <h4 class="text-center description">Divide details about your product or agency work into parts.
                         Write a few lines about each one and contact us about any further collaboration. We will
                         responde get back to you in a couple of hours.</h4>
@@ -322,22 +360,22 @@
             <script>
 				document.write(new Date().getFullYear())
             </script>
-            , Lotus Software Co
+            , Lotus Software.
             <nav class="list-inline">
                 <ul>
                     <li class="nav-item">
                         <a href="https://www.facebook.com/">
-                            <i class="fa fa-facebook"></i>
+                            <i class="fab fa-facebook fa-3x"></i>
                         </a>
                     <li class="nav-item">
                     <li>
                         <a href="https://www.instagram.com/">
-                            <i class="fa fa-instagram"></i>
+                            <i class="fab fa-instagram-square fa-3x"></i>
                         </a>
                     <li class="nav-item">
                     <li>
                         <a href="https://www.linkedin.com/">
-                            <i class="fa fa-linkedin-in"></i>
+                            <i class="fab fa-linkedin fa-3x"></i>
                         </a>
                     </li>
 
