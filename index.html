@@ -90,6 +90,125 @@
             vertical-align: middle;
         }
     </style>
+
+
+    <!--    card style-->
+    <style>
+        .date__box {
+            position: absolute;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            color: #ccc;
+            border: 4px solid;
+            font-weight: bold;
+            padding: 5px 10px;
+        }
+
+        .date__box .date__day {
+            font-size: 22px;
+        }
+
+        .blog-card {
+            padding: 30px;
+            position: relative;
+        }
+
+        .blog-card .date__box {
+            opacity: 0;
+            transform: scale(0.5);
+            transition: 300ms ease-in-out;
+        }
+
+        .blog-card .blog-card__background, .blog-card .card__background--layer {
+            z-index: -1;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        .blog-card .blog-card__background {
+            padding: 15px;
+            background: white;
+        }
+
+        .blog-card .card__background--wrapper {
+            height: 100%;
+            clip-path: polygon(0 0, 100% 0, 100% 80%, 0 60%);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .blog-card .card__background--main {
+            height: 100%;
+            position: relative;
+            transition: 300ms ease-in-out;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .blog-card .card__background--layer {
+            z-index: 0;
+            opacity: 0;
+            background: rgba(51, 51, 51, 0.9);
+            transition: 300ms ease-in-out;
+        }
+
+        .blog-card .blog-card__head {
+            height: 300px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .blog-card .blog-card__info {
+            z-index: 10;
+            background: white;
+            padding: 20px 15px;
+        }
+
+        .blog-card .blog-card__info h5 {
+            transition: 300ms ease-in-out;
+        }
+
+        .blog-card:hover .date__box {
+            opacity: 1;
+            transform: scale(1);
+        }
+
+        .blog-card:hover .card__background--main {
+            transform: scale(1.2) rotate(5deg);
+        }
+
+        .blog-card:hover .card__background--layer {
+            opacity: 1;
+        }
+
+        .blog-card:hover .blog-card__info h5 {
+            color: #7C4DFF;
+        }
+
+        a.icon-link {
+            color: #363738;
+            transition: 200ms ease-in-out;
+        }
+
+        a.icon-link i {
+            color: #7C4DFF;
+        }
+
+        a.icon-link:hover {
+            color: #7C4DFF;
+            text-decoration: none;
+        }
+
+
+    </style>
+
+
     <meta content='width=device-width, initial-scale=1.0, shrink-to-fit=no' name='viewport'/>
     <!--    todo change meta description to company vision-->
     <meta name="description" content="Lotus Software is a software company based on Colombo, Sri Lanka."/>
@@ -140,7 +259,7 @@
                             class="material-icons">laptop_mac</i>Our Products</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link " href="#products" target="_self">
+                    <a class="nav-link " href="#blog" target="_self">
                         <i class="fab fa-blogger-b fa-2x"></i>&nbsp;Blog</a>
                 </li>
                 <li class="nav-item">
@@ -344,6 +463,104 @@
 
             </div>
         </div>
+        <!--        Cards-->
+        <div class="section section-contacts" id="blog">
+            <div class="container">
+            <h2 class="text-center title">Blog</h2>
+
+            <div class="row">
+
+<!--            <div class="container">-->
+<!--                <div class="row">-->
+                    <div class="col-md-6">
+                        <article class="blog-card">
+                            <div class="blog-card__background">
+                                <div class="card__background--wrapper">
+                                    <div class="card__background--main"
+                                         style="background-image: url('assets/img/pipeline.png'); ">
+                                        <div class="card__background--layer"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="blog-card__head">
+          <span class="date__box">
+            <span class="date__day">Machine</span>
+            <span class="date__month">Learning</span>
+          </span>
+                            </div>
+                            <div class="blog-card__info">
+                                <h4 class="h4">Is Pipeline important in Machine learning?</h4>
+                                <p>
+                                    <i class="fas fa-user-edit"></i>&nbsp;Thilina Shashimal Senarath
+                                </p>
+                                <p>In machine learning,
+                                    a pipeline is created to allow data flow from its raw format to some useful
+                                    information.
+                                    And also it provides a mechanism to build a parallel pipeline to compare the results
+                                    of
+                                    several machine learning methods.
+                                    <br>
+                                    In this article, we discuss about Pipelining with Pandas with pdpipe. pdpipe is a
+                                    better
+                                    solution for pipelining issues with Pandas Df.</p>
+                                <a href="https://link.medium.com/AUtsjbbTw6" class="btn btn--with-icon" target="_blank"><i class="btn-icon fa fa-long-arrow-right"></i>READ
+                                    MORE</a>
+                            </div>
+                        </article>
+                    </div>
+<!--                </div>-->
+<!--            </div>-->
+
+
+
+
+
+<!--            <div class="container">-->
+<!--                <div class="row">-->
+                    <div class="col-md-6">
+                        <article class="blog-card">
+                            <div class="blog-card__background">
+                                <div class="card__background--wrapper">
+                                    <div class="card__background--main"
+                                         style="background-image: url('assets/img/git.jpeg'); ">
+                                        <div class="card__background--layer"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="blog-card__head">
+          <span class="date__box">
+            <span class="date__day">Version</span>
+            <span class="date__month">Control</span>
+          </span>
+                            </div>
+                            <div class="blog-card__info">
+                                <h4 class="h4">Version Control with Git</h4>
+                                <p>
+                                    <i class="fas fa-user-edit"></i>&nbsp;Thilina Shashimal Senarath
+                                </p>
+                                <p>We can think of version control from the perspectives of content, teams,
+                                    and agility.Version control manages a collection of changing and improving
+                                    files which can call a project.The complete history of the project is tracked
+                                    and available at any time.
+                                <br>
+                                    Version control also supports teams working on that collection of files.<br><br>
+                                </p>
+                                <a href="https://link.medium.com/6VGXCaeTw6" class="btn btn--with-icon" target="_blank"><i class="btn-icon fa fa-long-arrow-right"></i>READ
+                                    MORE</a>
+                            </div>
+                        </article>
+                    </div>
+<!--                </div>-->
+<!--            </div>-->
+
+
+            </div>
+        </div>
+        </div>
+
+
+        <!--        Cards-->
+
         <div class="section section-contacts" id="contact_us">
             <h2 class="text-center title">Get in touch</h2>
 
@@ -477,11 +694,11 @@
 <!-- Control Center for Material Kit: parallax effects, scripts for the example pages etc -->
 <script src="./assets/js/material-kit.js?v=2.0.7" type="text/javascript"></script>
 
-<script type="text/javascript">
-	$(document).ready(function () {
-		$("#wrapper").toggleClass("toggle");
-	});
-</script>
+<!--<script type="text/javascript">-->
+<!--	$(document).ready(function () {-->
+<!--		$("#wrapper").toggleClass("toggle");-->
+<!--	});-->
+<!--</script>-->
 </body>
 
 </html>
